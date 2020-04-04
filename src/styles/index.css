@@ -1,0 +1,19 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+#root{
+  width:100vw;
+  height:100vh;
+  background: black;
+}
+
+@font-face {
+  font-family: 'Proxima';
+  src: local('Proxima'), url(./fonts/proxima_nova.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Freight';
+  src: local('Freight'), url(./fonts/freight_medium.ttf) format('truetype');
+}
