@@ -13,7 +13,7 @@ const IntroButton = ({clicked, onLearnMore}) => {
         // animate={clicked ? 'open' : 'closed'}
         onClick={()=> onLearnMore()}
         style={{ backgroundColor: 'black', width: '160px', height: '50px' }}
-        className="mt-5 border border-solid border-white text-white relative flex justify-center items-center text-sm uppercase font-semibold font-proxima cursor-pointer" 
+        className="turn-yellow mt-5 border border-solid border-white text-white relative flex justify-center items-center text-sm uppercase font-semibold font-proxima" 
         whileHover={{ backgroundColor: 'rgb(245, 236, 66)', color: 'black', border: '0' }}
         whileTap={{ backgroundColor: 'rgb(245, 236, 66)', color: 'black', border: '0' }}>
         <span>Who am i</span>
