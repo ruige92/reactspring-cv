@@ -35,7 +35,7 @@ const Menu = ({clicked}) => {
             transition={{duration:0.7, delay: 0.9}}
             // variants={variants}
             // animate={clicked ? 'open' : 'closed'}
-            className="absolute top-0 flex text-white uppercase w-full flex justify-center font-proxima font-semibold text-xs tracking-widest">
+            className="absolute top-0 flex text-white uppercase w-full flex justify-center font-proxima font-semibold text-xs tracking-widest z-10">
             <motion.li
                 style={{listStyle:'none'}}
                 animate={menuItemControl}

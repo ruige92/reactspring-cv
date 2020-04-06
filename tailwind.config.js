@@ -12,6 +12,13 @@ module.exports = {
     fontFamily: {
       'proxima': ['Proxima'],
       'freight': ['Freight'],
+      'cn1': ['Chinese1'],
+      'cn2': ['Chinese2'],
+      'tg': ['TradeGothic'],
+      'tg_b': ['TradeGothicB'],
+      'tg_bo': ['TradeGothicBO'],
+      'tg_o': ['TradeGothicO'],
+      'tg_l': ['TradeGothicL'],
     },
     backgroundColor: {
       'primary-yellow': 'rgb(245, 236, 66)'

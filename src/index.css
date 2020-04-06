@@ -2580,6 +2580,34 @@ video {
   font-family: Freight;
 }
 
+.font-cn1 {
+  font-family: Chinese1;
+}
+
+.font-cn2 {
+  font-family: Chinese2;
+}
+
+.font-tg {
+  font-family: TradeGothic;
+}
+
+.font-tg_b {
+  font-family: TradeGothicB;
+}
+
+.font-tg_bo {
+  font-family: TradeGothicBO;
+}
+
+.font-tg_o {
+  font-family: TradeGothicO;
+}
+
+.font-tg_l {
+  font-family: TradeGothicL;
+}
+
 .font-hairline {
   font-weight: 100;
 }
@@ -9827,11 +9855,12 @@ video {
 #root{
   width:100vw;
   height:100vh;
-  background: black;
+  /* background: black; */
 }
 
 body{
   overflow: hidden;
+  background: radial-gradient(at 50% 60%, #1c1c1c 0%, #1f1f1f 30%, #070710 80%, #000 100%)
 }
 
 @font-face {
@@ -9844,6 +9873,48 @@ body{
   font-family: 'Freight';
 
   src: local('Freight'), url(./fonts/freight_medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Chinese1';
+
+  src: local('Chinese1'), url(./fonts/chinese1.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Chinese2';
+
+  src: local('Chinese2'), url(./fonts/chinese2.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'TradeGothic';
+
+  src: local('TradeGothic'), url(./fonts/tg.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'TradeGothicB';
+
+  src: local('TradeGothicB'), url(./fonts/tg_b.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'TradeGothicBO';
+
+  src: local('TradeGothicBO'), url(./fonts/tg_bo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'TradeGothicL';
+
+  src: local('TradeGothicL'), url(./fonts/tg_l.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'TradeGothicO';
+
+  src: local('TradeGothicO'), url(./fonts/tg_o.ttf) format('truetype');
 }
 
 * {
@@ -9861,6 +9932,7 @@ body{
   transform: translate(-50%, -50%);
   transition: opacity 0.3s ease-in-out,
                 transform 0.3s ease-in-out;
+  z-index:999
 }
 
 .cursor-dot {
@@ -9871,9 +9943,9 @@ body{
 }
 
 .cursor-dot-outline {
-  size: 40px;
-  width: 40px;
-  height: 40px;
+  size: 20px;
+  width: 20px;
+  height: 20px;
   /* border: 1px solid white; */
   /* -webkit-filter: invert(1);
     filter: invert(1); */
@@ -11858,6 +11930,34 @@ body{
 
   .sm\:font-freight {
     font-family: Freight;
+  }
+
+  .sm\:font-cn1 {
+    font-family: Chinese1;
+  }
+
+  .sm\:font-cn2 {
+    font-family: Chinese2;
+  }
+
+  .sm\:font-tg {
+    font-family: TradeGothic;
+  }
+
+  .sm\:font-tg_b {
+    font-family: TradeGothicB;
+  }
+
+  .sm\:font-tg_bo {
+    font-family: TradeGothicBO;
+  }
+
+  .sm\:font-tg_o {
+    font-family: TradeGothicO;
+  }
+
+  .sm\:font-tg_l {
+    font-family: TradeGothicL;
   }
 
   .sm\:font-hairline {
@@ -21080,6 +21180,34 @@ body{
     font-family: Freight;
   }
 
+  .md\:font-cn1 {
+    font-family: Chinese1;
+  }
+
+  .md\:font-cn2 {
+    font-family: Chinese2;
+  }
+
+  .md\:font-tg {
+    font-family: TradeGothic;
+  }
+
+  .md\:font-tg_b {
+    font-family: TradeGothicB;
+  }
+
+  .md\:font-tg_bo {
+    font-family: TradeGothicBO;
+  }
+
+  .md\:font-tg_o {
+    font-family: TradeGothicO;
+  }
+
+  .md\:font-tg_l {
+    font-family: TradeGothicL;
+  }
+
   .md\:font-hairline {
     font-weight: 100;
   }
@@ -30300,6 +30428,34 @@ body{
     font-family: Freight;
   }
 
+  .lg\:font-cn1 {
+    font-family: Chinese1;
+  }
+
+  .lg\:font-cn2 {
+    font-family: Chinese2;
+  }
+
+  .lg\:font-tg {
+    font-family: TradeGothic;
+  }
+
+  .lg\:font-tg_b {
+    font-family: TradeGothicB;
+  }
+
+  .lg\:font-tg_bo {
+    font-family: TradeGothicBO;
+  }
+
+  .lg\:font-tg_o {
+    font-family: TradeGothicO;
+  }
+
+  .lg\:font-tg_l {
+    font-family: TradeGothicL;
+  }
+
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -39518,6 +39674,34 @@ body{
 
   .xl\:font-freight {
     font-family: Freight;
+  }
+
+  .xl\:font-cn1 {
+    font-family: Chinese1;
+  }
+
+  .xl\:font-cn2 {
+    font-family: Chinese2;
+  }
+
+  .xl\:font-tg {
+    font-family: TradeGothic;
+  }
+
+  .xl\:font-tg_b {
+    font-family: TradeGothicB;
+  }
+
+  .xl\:font-tg_bo {
+    font-family: TradeGothicBO;
+  }
+
+  .xl\:font-tg_o {
+    font-family: TradeGothicO;
+  }
+
+  .xl\:font-tg_l {
+    font-family: TradeGothicL;
   }
 
   .xl\:font-hairline {

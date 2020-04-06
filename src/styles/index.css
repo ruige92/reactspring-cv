@@ -5,11 +5,12 @@
 #root{
   width:100vw;
   height:100vh;
-  background: black;
+  /* background: black; */
 }
 
 body{
   overflow: hidden;
+  background: radial-gradient(at 50% 60%, #1c1c1c 0%, #1f1f1f 30%, #070710 80%, #000 100%)
 }
 
 @font-face {
@@ -20,6 +21,41 @@ body{
 @font-face {
   font-family: 'Freight';
   src: local('Freight'), url(./fonts/freight_medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Chinese1';
+  src: local('Chinese1'), url(./fonts/chinese1.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Chinese2';
+  src: local('Chinese2'), url(./fonts/chinese2.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'TradeGothic';
+  src: local('TradeGothic'), url(./fonts/tg.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'TradeGothicB';
+  src: local('TradeGothicB'), url(./fonts/tg_b.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'TradeGothicBO';
+  src: local('TradeGothicBO'), url(./fonts/tg_bo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'TradeGothicL';
+  src: local('TradeGothicL'), url(./fonts/tg_l.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'TradeGothicO';
+  src: local('TradeGothicO'), url(./fonts/tg_o.ttf) format('truetype');
 }
 
 
@@ -38,6 +74,7 @@ body{
     transform: translate(-50%, -50%);
     transition: opacity 0.3s ease-in-out,
                 transform 0.3s ease-in-out;
+    z-index:999
 }
 
 .cursor-dot {
@@ -48,9 +85,9 @@ body{
 }
 
 .cursor-dot-outline {
-    size: 40px;
-    width: 40px;
-    height: 40px;
+    size: 20px;
+    width: 20px;
+    height: 20px;
     /* border: 1px solid white; */
     /* -webkit-filter: invert(1);
     filter: invert(1); */
